@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "21E6D824780A3051603F08E06CE5CE9DFA515F25",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "17A3BD8143C520FAC521596D99E9E9164855923A" : 0,
+    "21E6D824780A3051603F08E06CE5CE9DFA515F25" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "37937E87-9785-4339-B03C-061E89C02C13",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "17A3BD8143C520FAC521596D99E9E9164855923A" : "HanChengApp",
+    "21E6D824780A3051603F08E06CE5CE9DFA515F25" : "HanChengBug\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Hancheng",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Hancheng.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/git.oschina.net\/xiaozao\/HanChengApp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "17A3BD8143C520FAC521596D99E9E9164855923A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/fanqiwodi\/HanChengBug.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "21E6D824780A3051603F08E06CE5CE9DFA515F25"
+    }
+  ]
+}
