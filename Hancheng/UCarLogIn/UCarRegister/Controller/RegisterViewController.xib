@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15E56a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController">
+            <connections>
+                <outlet property="buttonCarSource" destination="sBd-aX-ZRj" id="0F5-oT-jAH"/>
+                <outlet property="buttonCarSourceCenterY" destination="D9Q-rm-aIK" id="FsS-iy-0wA"/>
+                <outlet property="buttonDealers" destination="bpX-FV-gAi" id="59y-YC-3qR"/>
+                <outlet property="buttonDealersCenterY" destination="fj2-uM-yBh" id="GFB-yS-aC8"/>
+                <outlet property="imCarBussiness" destination="Ncr-vM-slD" id="8b3-or-377"/>
+                <outlet property="imCarSource" destination="p33-Og-O5V" id="rVd-We-oww"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="widthCarSourceWidh" destination="cxA-gz-pla" id="cYw-XE-zAk"/>
+                <outlet property="widthSourceHeight" destination="sdM-fY-qPw" id="BKo-aU-Bli"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择您的身份" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6xf-6I-ncv">
+                    <rect key="frame" x="107" y="20" width="105" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bpX-FV-gAi" customClass="UIControl">
+                    <rect key="frame" x="100" y="309" width="120" height="150"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我是经销商" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ncr-vM-slD">
+                            <rect key="frame" x="1" y="130" width="119" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="110" id="dwI-CG-8vr"/>
+                                <constraint firstAttribute="height" constant="36" id="qEO-QU-vRv"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="dwI-CG-8vr"/>
+                                </mask>
+                            </variation>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="我是经销商" translatesAutoresizingMaskIntoConstraints="NO" id="Vre-Ly-vzU">
+                            <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="Vre-Ly-vzU" secondAttribute="height" multiplier="1:1" id="ubW-tM-DIQ"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Ncr-vM-slD" firstAttribute="centerX" secondItem="bpX-FV-gAi" secondAttribute="centerX" id="4NC-Vf-sxe"/>
+                        <constraint firstAttribute="width" secondItem="bpX-FV-gAi" secondAttribute="height" multiplier="4:5" id="94s-1N-5AD"/>
+                        <constraint firstItem="Vre-Ly-vzU" firstAttribute="top" secondItem="bpX-FV-gAi" secondAttribute="top" id="RFO-92-3ux"/>
+                        <constraint firstAttribute="trailing" secondItem="Vre-Ly-vzU" secondAttribute="trailing" id="ThZ-Wh-uyE"/>
+                        <constraint firstItem="Ncr-vM-slD" firstAttribute="leading" secondItem="bpX-FV-gAi" secondAttribute="leading" constant="1" id="coi-gx-yT8"/>
+                        <constraint firstItem="Ncr-vM-slD" firstAttribute="top" secondItem="Vre-Ly-vzU" secondAttribute="bottom" constant="10" id="drQ-JA-cO4"/>
+                        <constraint firstAttribute="trailing" secondItem="Ncr-vM-slD" secondAttribute="trailing" id="i1b-d8-LZ0"/>
+                        <constraint firstItem="Vre-Ly-vzU" firstAttribute="leading" secondItem="bpX-FV-gAi" secondAttribute="leading" id="rQL-t6-SVb"/>
+                        <constraint firstAttribute="width" constant="120" id="sdM-fY-qPw"/>
+                    </constraints>
+                    <connections>
+                        <action selector="buttonDealersAction:" destination="-1" eventType="touchUpInside" id="B1q-xt-dx7"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sBd-aX-ZRj" customClass="UIControl">
+                    <rect key="frame" x="100" y="109" width="120" height="150"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我是车源商" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p33-Og-O5V">
+                            <rect key="frame" x="0.0" y="130" width="119" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="110" id="5MZ-xj-t1g"/>
+                                <constraint firstAttribute="height" constant="36" id="m03-9X-PZO"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="5MZ-xj-t1g"/>
+                                </mask>
+                            </variation>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="我是车源商" translatesAutoresizingMaskIntoConstraints="NO" id="Od0-cc-D99">
+                            <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="Od0-cc-D99" secondAttribute="height" multiplier="1:1" id="qHt-H2-fjN"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Od0-cc-D99" secondAttribute="trailing" id="08S-Mt-ZTP"/>
+                        <constraint firstAttribute="trailing" secondItem="p33-Og-O5V" secondAttribute="trailing" constant="1" id="K1U-Co-133"/>
+                        <constraint firstItem="p33-Og-O5V" firstAttribute="centerX" secondItem="sBd-aX-ZRj" secondAttribute="centerX" id="P1Z-WD-4Cc"/>
+                        <constraint firstAttribute="width" secondItem="sBd-aX-ZRj" secondAttribute="height" multiplier="4:5" id="Z5x-l0-Fgf"/>
+                        <constraint firstItem="Od0-cc-D99" firstAttribute="leading" secondItem="sBd-aX-ZRj" secondAttribute="leading" id="a5O-Pe-iCc"/>
+                        <constraint firstAttribute="width" constant="120" id="cxA-gz-pla"/>
+                        <constraint firstItem="p33-Og-O5V" firstAttribute="top" secondItem="Od0-cc-D99" secondAttribute="bottom" constant="10" id="g7v-tC-fm9"/>
+                        <constraint firstItem="Od0-cc-D99" firstAttribute="top" secondItem="sBd-aX-ZRj" secondAttribute="top" id="w5F-6e-MSP"/>
+                        <constraint firstItem="p33-Og-O5V" firstAttribute="leading" secondItem="sBd-aX-ZRj" secondAttribute="leading" id="ySf-9i-jlU"/>
+                    </constraints>
+                    <connections>
+                        <action selector="buttonCarSourceAction:" destination="-1" eventType="touchUpInside" id="wR1-ZG-sid"/>
+                    </connections>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="bpX-FV-gAi" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="C4x-VP-IRa"/>
+                <constraint firstItem="sBd-aX-ZRj" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-100" id="D9Q-rm-aIK"/>
+                <constraint firstItem="6xf-6I-ncv" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="dbu-Ms-wBI"/>
+                <constraint firstItem="6xf-6I-ncv" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="enM-zR-W8Y"/>
+                <constraint firstItem="bpX-FV-gAi" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="100" id="fj2-uM-yBh"/>
+                <constraint firstItem="sBd-aX-ZRj" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="nP3-k0-8UA"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="我是经销商" width="195" height="167"/>
+        <image name="我是车源商" width="195" height="167"/>
+    </resources>
+</document>

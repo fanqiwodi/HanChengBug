@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15E39d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="UCarShopBuyButtonView">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="45"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WPy-ig-VNc">
+                    <rect key="frame" x="20" y="2.5" width="260" height="40"/>
+                    <color key="backgroundColor" red="1" green="0.31372549019607843" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="ToU-FT-dnD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="提交">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="WPy-ig-VNc" secondAttribute="trailing" constant="20" id="CgO-bP-bqu"/>
+                <constraint firstItem="WPy-ig-VNc" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Zm3-hW-FRa"/>
+                <constraint firstItem="WPy-ig-VNc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="htl-gI-1yQ"/>
+                <constraint firstItem="WPy-ig-VNc" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="v7n-cd-doJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="sendButton" destination="WPy-ig-VNc" id="ab2-g2-fLZ"/>
+            </connections>
+            <point key="canvasLocation" x="310" y="33.5"/>
+        </view>
+    </objects>
+</document>

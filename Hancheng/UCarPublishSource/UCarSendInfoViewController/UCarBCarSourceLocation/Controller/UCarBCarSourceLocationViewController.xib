@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15E27e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UCarBCarSourceLocationViewController">
+            <connections>
+                <outlet property="inPutTextField" destination="Rl4-kC-uNg" id="HvO-pf-eNT"/>
+                <outlet property="tipLabel" destination="cAk-CD-1zd" id="jVr-Gs-hez"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qws-xN-ufF">
+                    <rect key="frame" x="0.0" y="10" width="320" height="45"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入车源所在地" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rl4-kC-uNg">
+                            <rect key="frame" x="12" y="8" width="296" height="29"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Rl4-kC-uNg" firstAttribute="top" secondItem="Qws-xN-ufF" secondAttribute="topMargin" id="C4V-8P-uiS"/>
+                        <constraint firstItem="Rl4-kC-uNg" firstAttribute="leading" secondItem="Qws-xN-ufF" secondAttribute="leading" constant="12" id="EOM-cC-QC8"/>
+                        <constraint firstAttribute="trailingMargin" secondItem="Rl4-kC-uNg" secondAttribute="trailing" id="LqH-ZS-CN4"/>
+                        <constraint firstAttribute="height" constant="45" id="Nwu-Y0-YKV"/>
+                        <constraint firstAttribute="trailing" secondItem="Rl4-kC-uNg" secondAttribute="trailing" constant="12" id="qJi-T0-xkZ"/>
+                        <constraint firstAttribute="bottomMargin" secondItem="Rl4-kC-uNg" secondAttribute="bottom" id="tZM-x6-Bvg"/>
+                        <constraint firstItem="Rl4-kC-uNg" firstAttribute="leading" secondItem="Qws-xN-ufF" secondAttribute="leadingMargin" id="zHY-4I-OYk"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="LqH-ZS-CN4"/>
+                            <exclude reference="zHY-4I-OYk"/>
+                        </mask>
+                    </variation>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="       为更好地销售车源, 建议填写车源所在地, 如 &quot;东区&quot; 或 &quot;浙江&quot; 或 &quot;杭州&quot; 或 &quot;东疆库&quot; ." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cAk-CD-1zd">
+                    <rect key="frame" x="12" y="55" width="296" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="qhU-eY-iuX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.4823529411764706" green="0.4823529411764706" blue="0.4823529411764706" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="icon_custom_tip" translatesAutoresizingMaskIntoConstraints="NO" id="uCZ-gz-YE2">
+                    <rect key="frame" x="12" y="62" width="23" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="uCZ-gz-YE2" secondAttribute="height" multiplier="23:14" id="xJg-o4-fIe"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Qws-xN-ufF" secondAttribute="trailing" id="6d8-J5-c1z"/>
+                <constraint firstItem="Qws-xN-ufF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="Mwo-JK-G5i"/>
+                <constraint firstItem="Qws-xN-ufF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="PDD-fj-Bgx"/>
+                <constraint firstItem="cAk-CD-1zd" firstAttribute="top" secondItem="Qws-xN-ufF" secondAttribute="bottom" id="Xg7-P4-oe4"/>
+                <constraint firstAttribute="trailing" secondItem="cAk-CD-1zd" secondAttribute="trailing" constant="12" id="ez7-9v-Ooz"/>
+                <constraint firstItem="cAk-CD-1zd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="12" id="hN4-1d-aCL"/>
+                <constraint firstItem="uCZ-gz-YE2" firstAttribute="top" secondItem="Qws-xN-ufF" secondAttribute="bottom" constant="7" id="qk2-Kj-TXu"/>
+                <constraint firstItem="uCZ-gz-YE2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="12" id="vOd-SL-mn5"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_custom_tip" width="23" height="14"/>
+    </resources>
+</document>

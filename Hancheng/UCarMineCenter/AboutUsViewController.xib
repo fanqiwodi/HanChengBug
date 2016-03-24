@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutUsViewController">
+            <connections>
+                <outlet property="tableView" destination="EvS-6s-1Oy" id="64n-Xr-CQS"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Uchekulogo" translatesAutoresizingMaskIntoConstraints="NO" id="yEb-9y-GMl">
+                    <rect key="frame" x="118" y="50" width="85" height="85"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="yEb-9y-GMl" secondAttribute="height" multiplier="1:1" id="ay9-ae-ZFb"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="汉乘U车库" translatesAutoresizingMaskIntoConstraints="NO" id="jh7-G8-Hut">
+                    <rect key="frame" x="118" y="148" width="85" height="18"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="v1.0.1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="luD-zN-Dln">
+                    <rect key="frame" x="143" y="176" width="35" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.54509803921568623" green="0.54509803921568623" blue="0.54509803921568623" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EvS-6s-1Oy">
+                    <rect key="frame" x="0.0" y="241" width="320" height="239"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="luD-zN-Dln" firstAttribute="top" secondItem="jh7-G8-Hut" secondAttribute="bottom" constant="10" id="2Ts-Kf-p6c"/>
+                <constraint firstItem="yEb-9y-GMl" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="3vc-p7-wRF"/>
+                <constraint firstItem="EvS-6s-1Oy" firstAttribute="top" secondItem="luD-zN-Dln" secondAttribute="bottom" constant="48" id="F6N-Oe-YII"/>
+                <constraint firstItem="jh7-G8-Hut" firstAttribute="centerX" secondItem="yEb-9y-GMl" secondAttribute="centerX" id="FBA-9T-zJJ"/>
+                <constraint firstItem="yEb-9y-GMl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="LkR-qZ-L3e"/>
+                <constraint firstItem="luD-zN-Dln" firstAttribute="centerX" secondItem="jh7-G8-Hut" secondAttribute="centerX" id="mer-kn-xt2"/>
+                <constraint firstItem="EvS-6s-1Oy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="sru-Ta-h8y"/>
+                <constraint firstAttribute="bottom" secondItem="EvS-6s-1Oy" secondAttribute="bottom" id="uKy-2v-Vo5"/>
+                <constraint firstItem="jh7-G8-Hut" firstAttribute="top" secondItem="yEb-9y-GMl" secondAttribute="bottom" constant="13" id="vmt-6E-D97"/>
+                <constraint firstItem="jh7-G8-Hut" firstAttribute="width" secondItem="yEb-9y-GMl" secondAttribute="width" id="wAI-is-Z9M"/>
+                <constraint firstAttribute="trailing" secondItem="EvS-6s-1Oy" secondAttribute="trailing" id="yef-im-sV7"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Uchekulogo" width="85" height="85"/>
+        <image name="汉乘U车库" width="85" height="18"/>
+    </resources>
+</document>

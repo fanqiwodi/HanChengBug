@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15E27e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DeleteContactViewController">
+            <connections>
+                <outlet property="phoneTextF" destination="fDI-YR-TJc" id="LJg-9V-jOa"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mXA-pn-Zw0">
+                    <rect key="frame" x="0.0" y="10" width="375" height="45"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="联系电话" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zgg-Cl-1Nq">
+                            <rect key="frame" x="11" y="12" width="68" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.23921568627450981" green="0.23921568627450981" blue="0.23921568627450981" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="2223323" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fDI-YR-TJc">
+                            <rect key="frame" x="114" y="12" width="75" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="zgg-Cl-1Nq" firstAttribute="centerY" secondItem="mXA-pn-Zw0" secondAttribute="centerY" id="CE6-oh-Bef"/>
+                        <constraint firstItem="zgg-Cl-1Nq" firstAttribute="leading" secondItem="mXA-pn-Zw0" secondAttribute="leading" constant="11" id="Zi8-H4-sH2"/>
+                        <constraint firstItem="fDI-YR-TJc" firstAttribute="leading" secondItem="zgg-Cl-1Nq" secondAttribute="trailing" constant="35" id="lgD-KH-XeG"/>
+                        <constraint firstAttribute="width" secondItem="mXA-pn-Zw0" secondAttribute="height" multiplier="25:3" id="rND-va-bgb"/>
+                        <constraint firstItem="fDI-YR-TJc" firstAttribute="centerY" secondItem="mXA-pn-Zw0" secondAttribute="centerY" id="rQL-vM-hKm"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pif-YM-KzF">
+                    <rect key="frame" x="10" y="75" width="355" height="40"/>
+                    <color key="backgroundColor" red="0.96078431372549022" green="0.21176470588235294" blue="0.039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="woF-fc-vPE"/>
+                    </constraints>
+                    <state key="normal" title="删除联系电话">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                            <color key="value" red="0.98823529409999999" green="0.21960784310000001" blue="0.039215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="deleteAction:" destination="-1" eventType="touchUpInside" id="c7y-5r-wsD"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="mXA-pn-Zw0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4Cz-Hd-kSh"/>
+                <constraint firstItem="pif-YM-KzF" firstAttribute="top" secondItem="mXA-pn-Zw0" secondAttribute="bottom" constant="20" id="IW8-JA-bqt"/>
+                <constraint firstAttribute="trailing" secondItem="pif-YM-KzF" secondAttribute="trailing" constant="10" id="MCN-Ho-yQw"/>
+                <constraint firstItem="pif-YM-KzF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="SQe-2e-EH5"/>
+                <constraint firstAttribute="trailing" secondItem="mXA-pn-Zw0" secondAttribute="trailing" id="TEq-yN-SBs"/>
+                <constraint firstItem="mXA-pn-Zw0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="qwW-vw-5lt"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="454.5" y="372.5"/>
+        </view>
+    </objects>
+</document>

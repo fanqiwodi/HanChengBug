@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PublishViewController">
+            <connections>
+                <outlet property="addButton" destination="YiE-pI-j5t" id="Etz-8b-YBR"/>
+                <outlet property="addButtonFrameHeight" destination="l5f-ch-I7i" id="wuu-YI-UYT"/>
+                <outlet property="baseScrollView" destination="lYU-yA-rD2" id="dHj-NA-BGy"/>
+                <outlet property="carInfoStatus" destination="gyf-eT-3W7" id="NQf-tw-HT0"/>
+                <outlet property="scrollviewHeight" destination="GaD-3i-MKv" id="cO8-da-RwJ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YiE-pI-j5t">
+                    <rect key="frame" x="250" y="498" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="YiE-pI-j5t" secondAttribute="height" multiplier="1:1" id="W4M-Ac-xiv"/>
+                        <constraint firstAttribute="width" constant="50" id="l5f-ch-I7i"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="icon_into_garage_add"/>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gyf-eT-3W7" customClass="HMSegmentedControl">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="36"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="gyf-eT-3W7" secondAttribute="height" multiplier="750:84" id="Lw6-ZZ-Ni4"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lYU-yA-rD2">
+                    <rect key="frame" x="0.0" y="36" width="320" height="532"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="532" id="GaD-3i-MKv"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="lYU-yA-rD2" firstAttribute="top" secondItem="gyf-eT-3W7" secondAttribute="bottom" id="4qU-ax-5ah"/>
+                <constraint firstItem="lYU-yA-rD2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Awi-Xt-1Hd"/>
+                <constraint firstAttribute="bottom" secondItem="YiE-pI-j5t" secondAttribute="bottom" constant="20" id="FGI-AS-Vdc"/>
+                <constraint firstAttribute="bottom" secondItem="lYU-yA-rD2" secondAttribute="bottom" id="HAa-GW-uBV"/>
+                <constraint firstAttribute="trailing" secondItem="YiE-pI-j5t" secondAttribute="trailing" constant="20" id="Zu1-qt-vk0"/>
+                <constraint firstItem="gyf-eT-3W7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ctl-Lj-lBE"/>
+                <constraint firstAttribute="trailing" secondItem="lYU-yA-rD2" secondAttribute="trailing" id="hQQ-fZ-bpK"/>
+                <constraint firstAttribute="trailing" secondItem="gyf-eT-3W7" secondAttribute="trailing" id="nIc-F3-ePV"/>
+                <constraint firstItem="gyf-eT-3W7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="vVg-bJ-ebt"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="HAa-GW-uBV"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_into_garage_add" width="68" height="68"/>
+    </resources>
+</document>

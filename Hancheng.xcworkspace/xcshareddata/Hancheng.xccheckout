@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>37937E87-9785-4339-B03C-061E89C02C13</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Hancheng</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>17A3BD8143C520FAC521596D99E9E9164855923A</key>
+		<string>https://git.oschina.net/xiaozao/HanChengApp.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Hancheng.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>17A3BD8143C520FAC521596D99E9E9164855923A</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://git.oschina.net/xiaozao/HanChengApp.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>17A3BD8143C520FAC521596D99E9E9164855923A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>17A3BD8143C520FAC521596D99E9E9164855923A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>HanChengApp</string>
+		</dict>
+	</array>
+</dict>
+</plist>

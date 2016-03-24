@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15E39d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="82" id="KGk-i7-Jjw" customClass="ShoppingPartDetailOrderTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="82"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="81.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pgs-Xg-vVM">
+                        <rect key="frame" x="0.0" y="11" width="4" height="18"/>
+                        <color key="backgroundColor" red="1" green="0.31372549019607843" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="4" id="9LA-Od-SIJ"/>
+                            <constraint firstAttribute="height" constant="16" id="Kxe-Do-bAv"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Kxe-Do-bAv"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A.R.T.Range Rover" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jjv-B8-5QN">
+                        <rect key="frame" x="16" y="10" width="284" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1298.00万元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBp-C5-FCA">
+                        <rect key="frame" x="12" y="45" width="86" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="1" green="0.31372549019607843" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xpi-Ao-kYW">
+                        <rect key="frame" x="0.0" y="71" width="320" height="10"/>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="j2J-kR-MdV"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="gBp-C5-FCA" secondAttribute="bottom" constant="19" id="5fj-Q3-hL6"/>
+                    <constraint firstAttribute="bottom" secondItem="Xpi-Ao-kYW" secondAttribute="bottom" id="6MQ-uF-lWm"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="jjv-B8-5QN" secondAttribute="trailing" constant="12" id="H2x-Qp-jmo"/>
+                    <constraint firstItem="jjv-B8-5QN" firstAttribute="leading" secondItem="Pgs-Xg-vVM" secondAttribute="trailing" constant="12" id="Pex-dC-OJ3"/>
+                    <constraint firstItem="Xpi-Ao-kYW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="WoM-TV-UVY"/>
+                    <constraint firstItem="Pgs-Xg-vVM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="eXa-85-95v"/>
+                    <constraint firstItem="gBp-C5-FCA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="f2A-xZ-df9"/>
+                    <constraint firstAttribute="trailing" secondItem="Xpi-Ao-kYW" secondAttribute="trailing" id="fyI-Z5-xAs"/>
+                    <constraint firstItem="jjv-B8-5QN" firstAttribute="height" secondItem="Pgs-Xg-vVM" secondAttribute="height" id="pMQ-MA-7HG"/>
+                    <constraint firstItem="Pgs-Xg-vVM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="sdY-de-GsO"/>
+                    <constraint firstItem="jjv-B8-5QN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="wyE-XX-MS9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="infoLabel" destination="jjv-B8-5QN" id="0Rj-Ph-81b"/>
+                <outlet property="infoPriceLabel" destination="gBp-C5-FCA" id="fsq-MZ-t9l"/>
+            </connections>
+            <point key="canvasLocation" x="287" y="312"/>
+        </tableViewCell>
+    </objects>
+</document>

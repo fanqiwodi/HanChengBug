@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15E39d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShoppingPartDetailViewController">
+            <connections>
+                <outlet property="bottomHeight" destination="8mU-Fp-juy" id="aeZ-UC-CPQ"/>
+                <outlet property="lineView" destination="PxW-RW-bQn" id="SvU-7a-GYB"/>
+                <outlet property="phoneCallWidth" destination="mcO-eu-ziF" id="bAg-tN-wsm"/>
+                <outlet property="phoneConsulting" destination="k0E-18-oPj" id="keA-IE-3kI"/>
+                <outlet property="phoneView" destination="xGH-Yr-UKq" id="SPe-YB-tcz"/>
+                <outlet property="readyToBuy" destination="AjC-oj-Vbq" id="mgM-kT-64y"/>
+                <outlet property="view" destination="iN0-l3-epB" id="wm1-St-nLO"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xGH-Yr-UKq">
+                    <rect key="frame" x="0.0" y="519" width="108" height="49"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k0E-18-oPj" customClass="UIControl">
+                            <rect key="frame" x="14" y="0.0" width="80" height="49"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="电话咨询" translatesAutoresizingMaskIntoConstraints="NO" id="HVR-xv-PqS">
+                                    <rect key="frame" x="27" y="4" width="25" height="25"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="25" id="C41-0y-D6z"/>
+                                        <constraint firstAttribute="width" constant="25" id="z7m-sv-e1u"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="电话咨询" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X5T-F1-1ua">
+                                    <rect key="frame" x="16" y="31" width="48" height="15"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" red="0.54117647058823526" green="0.54117647058823526" blue="0.54117647058823526" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="7cP-2P-YNy"/>
+                                <constraint firstItem="X5T-F1-1ua" firstAttribute="top" secondItem="HVR-xv-PqS" secondAttribute="bottom" constant="2" id="FP3-Ym-R3s"/>
+                                <constraint firstItem="HVR-xv-PqS" firstAttribute="centerX" secondItem="k0E-18-oPj" secondAttribute="centerX" id="hkH-Oi-1gZ"/>
+                                <constraint firstAttribute="height" constant="49" id="j7V-n2-hv7"/>
+                                <constraint firstItem="X5T-F1-1ua" firstAttribute="centerX" secondItem="k0E-18-oPj" secondAttribute="centerX" id="m0x-18-fIb"/>
+                                <constraint firstItem="HVR-xv-PqS" firstAttribute="centerY" secondItem="k0E-18-oPj" secondAttribute="centerY" constant="-8" id="zM3-o3-kkI"/>
+                            </constraints>
+                            <connections>
+                                <action selector="phoneConsultingAction:" destination="-1" eventType="touchUpInside" id="VGo-OY-4xl"/>
+                            </connections>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="49" id="8mU-Fp-juy"/>
+                        <constraint firstItem="k0E-18-oPj" firstAttribute="centerX" secondItem="xGH-Yr-UKq" secondAttribute="centerX" id="jRH-XW-j7l"/>
+                        <constraint firstAttribute="width" constant="108" id="mcO-eu-ziF"/>
+                        <constraint firstItem="k0E-18-oPj" firstAttribute="centerY" secondItem="xGH-Yr-UKq" secondAttribute="centerY" id="xWC-Wf-TXm"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AjC-oj-Vbq" customClass="UIControl">
+                    <rect key="frame" x="108" y="519" width="212" height="49"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="预约下单" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fwz-YH-EBj">
+                            <rect key="frame" x="74" y="16" width="64" height="20"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.31372549019607843" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="fwz-YH-EBj" firstAttribute="centerX" secondItem="AjC-oj-Vbq" secondAttribute="centerX" id="3go-rq-vgv"/>
+                        <constraint firstItem="fwz-YH-EBj" firstAttribute="centerY" secondItem="AjC-oj-Vbq" secondAttribute="centerY" id="hZ3-R0-MlG"/>
+                    </constraints>
+                    <connections>
+                        <action selector="readyTobuyConsultingAction:" destination="-1" eventType="touchUpInside" id="sPa-cZ-wLK"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PxW-RW-bQn">
+                    <rect key="frame" x="0.0" y="517" width="320" height="2"/>
+                    <color key="backgroundColor" red="0.90196078431372551" green="0.90980392156862744" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="c5v-ea-0p1"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="AjC-oj-Vbq" firstAttribute="top" secondItem="PxW-RW-bQn" secondAttribute="bottom" id="466-1O-vkc"/>
+                <constraint firstAttribute="trailing" secondItem="AjC-oj-Vbq" secondAttribute="trailing" id="4hb-1E-b0H"/>
+                <constraint firstAttribute="bottom" secondItem="xGH-Yr-UKq" secondAttribute="bottom" id="9u4-2K-WcD"/>
+                <constraint firstItem="AjC-oj-Vbq" firstAttribute="height" secondItem="xGH-Yr-UKq" secondAttribute="height" id="DHk-EC-EhY"/>
+                <constraint firstItem="AjC-oj-Vbq" firstAttribute="leading" secondItem="xGH-Yr-UKq" secondAttribute="trailing" id="RKF-MR-ewD"/>
+                <constraint firstItem="PxW-RW-bQn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="YB3-vM-k0N"/>
+                <constraint firstItem="xGH-Yr-UKq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="h73-BP-VW7"/>
+                <constraint firstAttribute="bottom" secondItem="AjC-oj-Vbq" secondAttribute="bottom" id="kvf-ln-dk4"/>
+                <constraint firstAttribute="trailing" secondItem="AjC-oj-Vbq" secondAttribute="trailing" id="mEN-bW-gxc"/>
+                <constraint firstAttribute="trailing" secondItem="PxW-RW-bQn" secondAttribute="trailing" id="q7S-MH-crz"/>
+                <constraint firstItem="AjC-oj-Vbq" firstAttribute="leading" secondItem="xGH-Yr-UKq" secondAttribute="trailing" id="r06-Si-IXw"/>
+                <constraint firstAttribute="bottom" secondItem="AjC-oj-Vbq" secondAttribute="bottom" id="zK2-Y6-0vs"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="电话咨询" width="22" height="22"/>
+    </resources>
+</document>

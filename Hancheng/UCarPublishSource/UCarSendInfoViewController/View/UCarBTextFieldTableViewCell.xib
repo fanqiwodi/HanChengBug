@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15E27e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="UCarBTextFieldTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="报价" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Cz-Ko-56j">
+                        <rect key="frame" x="12" y="13" width="30" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="万" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WzY-DC-Pr9">
+                        <rect key="frame" x="293" y="12" width="15" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.58431372549019611" green="0.58431372549019611" blue="0.58431372549019611" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入报价" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rF5-rj-89q">
+                        <rect key="frame" x="142" y="13" width="139" height="18"/>
+                        <color key="textColor" red="1" green="0.31372549019607843" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
+                    </textField>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GL0-3R-oFW">
+                        <rect key="frame" x="12" y="43" width="308" height="1"/>
+                        <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="gCQ-kQ-W3a"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="WzY-DC-Pr9" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Fc2-r9-UIP"/>
+                    <constraint firstAttribute="trailing" secondItem="WzY-DC-Pr9" secondAttribute="trailing" constant="12" id="JAz-ug-WKw"/>
+                    <constraint firstItem="WzY-DC-Pr9" firstAttribute="leading" secondItem="rF5-rj-89q" secondAttribute="trailing" constant="12" id="PUx-6j-Xrx"/>
+                    <constraint firstItem="rF5-rj-89q" firstAttribute="leading" secondItem="8Cz-Ko-56j" secondAttribute="trailing" constant="100" id="Zfg-b3-rkT"/>
+                    <constraint firstAttribute="bottom" secondItem="GL0-3R-oFW" secondAttribute="bottom" id="ffZ-Kf-Lsp"/>
+                    <constraint firstItem="8Cz-Ko-56j" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="izi-8b-thw"/>
+                    <constraint firstItem="8Cz-Ko-56j" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="jCt-59-n7e"/>
+                    <constraint firstItem="GL0-3R-oFW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="ubJ-Oj-N32"/>
+                    <constraint firstAttribute="trailing" secondItem="GL0-3R-oFW" secondAttribute="trailing" id="yh2-lm-43c"/>
+                    <constraint firstItem="rF5-rj-89q" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ywX-b2-zeF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="inputPriceTextField" destination="rF5-rj-89q" id="SdR-fK-9tc"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

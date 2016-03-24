@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15E39d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="UCarBCarConfigureDetailTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconfont_selectedRed" translatesAutoresizingMaskIntoConstraints="NO" id="Eig-nu-tPQ">
+                        <rect key="frame" x="23" y="12" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="eDb-hk-L1O"/>
+                            <constraint firstAttribute="height" constant="20" id="mS9-wW-oca"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="寒冷包" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mqR-r8-fuA">
+                        <rect key="frame" x="56" y="0.0" width="178" height="43.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="1" green="0.31372549019607843" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9zp-ev-dO3" customClass="UIControl">
+                        <rect key="frame" x="234" y="0.0" width="86" height="43.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconfont_right" translatesAutoresizingMaskIntoConstraints="NO" id="HII-dQ-rc8">
+                                <rect key="frame" x="59" y="14" width="15" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="bWj-p4-w9T"/>
+                                    <constraint firstAttribute="width" constant="15" id="wp8-od-o3X"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="查看详情" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gjo-3w-tae">
+                                <rect key="frame" x="0.0" y="14" width="59" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.69019607843137254" green="0.69019607843137254" blue="0.69019607843137254" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="86" id="Zq5-WR-xZN"/>
+                            <constraint firstItem="gjo-3w-tae" firstAttribute="centerY" secondItem="9zp-ev-dO3" secondAttribute="centerY" id="c85-yQ-lns"/>
+                            <constraint firstItem="HII-dQ-rc8" firstAttribute="centerY" secondItem="9zp-ev-dO3" secondAttribute="centerY" id="cUb-pS-sBb"/>
+                            <constraint firstItem="gjo-3w-tae" firstAttribute="leading" secondItem="9zp-ev-dO3" secondAttribute="leading" id="eQw-7s-c2E"/>
+                            <constraint firstItem="HII-dQ-rc8" firstAttribute="leading" secondItem="gjo-3w-tae" secondAttribute="trailing" id="rKY-jk-j1u"/>
+                            <constraint firstAttribute="trailing" secondItem="HII-dQ-rc8" secondAttribute="trailing" constant="12" id="ueL-N6-OIE"/>
+                        </constraints>
+                        <connections>
+                            <action selector="didSelectShowDetail:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="jGc-sx-r8E"/>
+                        </connections>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e1s-DJ-FHA">
+                        <rect key="frame" x="232" y="0.0" width="1" height="43.5"/>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="XDR-G7-xTJ"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m3A-NT-K3t">
+                        <rect key="frame" x="12" y="42.5" width="308" height="1"/>
+                        <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="T0m-oV-4s5"/>
+                            <constraint firstAttribute="height" constant="1" id="Wec-df-1In"/>
+                            <constraint firstAttribute="height" constant="1" id="XsP-9C-whk"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="T0m-oV-4s5"/>
+                                <exclude reference="XsP-9C-whk"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="mqR-r8-fuA" secondAttribute="bottom" id="9TC-ig-8LU"/>
+                    <constraint firstItem="Eig-nu-tPQ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ANA-5S-aAu"/>
+                    <constraint firstAttribute="bottom" secondItem="9zp-ev-dO3" secondAttribute="bottom" id="EWl-Gz-aF4"/>
+                    <constraint firstAttribute="trailing" secondItem="9zp-ev-dO3" secondAttribute="trailing" id="EXc-QP-uiC"/>
+                    <constraint firstAttribute="trailing" secondItem="m3A-NT-K3t" secondAttribute="trailing" id="HRn-ri-5es"/>
+                    <constraint firstItem="mqR-r8-fuA" firstAttribute="leading" secondItem="Eig-nu-tPQ" secondAttribute="trailing" constant="13" id="Hbv-Uf-MP8"/>
+                    <constraint firstItem="mqR-r8-fuA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="IsG-2b-jaK"/>
+                    <constraint firstItem="m3A-NT-K3t" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="L3x-S5-POC"/>
+                    <constraint firstItem="9zp-ev-dO3" firstAttribute="leading" secondItem="mqR-r8-fuA" secondAttribute="trailing" id="QLE-zZ-ewO"/>
+                    <constraint firstItem="9zp-ev-dO3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="eZS-Kd-ZYT"/>
+                    <constraint firstItem="e1s-DJ-FHA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="igt-Ye-Zyz"/>
+                    <constraint firstAttribute="bottom" secondItem="e1s-DJ-FHA" secondAttribute="bottom" id="klu-wG-4ov"/>
+                    <constraint firstItem="9zp-ev-dO3" firstAttribute="leading" secondItem="e1s-DJ-FHA" secondAttribute="trailing" constant="1" id="lSM-UN-zzO"/>
+                    <constraint firstItem="Eig-nu-tPQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="23" id="oqN-Gr-0vl"/>
+                    <constraint firstAttribute="bottom" secondItem="m3A-NT-K3t" secondAttribute="bottom" id="rIP-Xh-sh2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="infoLabel" destination="mqR-r8-fuA" id="kFp-FV-Hmy"/>
+                <outlet property="selectedImageView" destination="Eig-nu-tPQ" id="lDS-cb-JDD"/>
+                <outlet property="showDetail" destination="9zp-ev-dO3" id="oaN-pY-DLs"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="iconfont_right" width="42" height="42"/>
+        <image name="iconfont_selectedRed" width="21" height="21"/>
+    </resources>
+</document>

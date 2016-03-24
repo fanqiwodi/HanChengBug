@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MessageSettingViewController">
+            <connections>
+                <outlet property="mySwitch" destination="DXy-TJ-9hb" id="UpO-Z3-JCU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IgE-yc-4L3">
+                    <rect key="frame" x="0.0" y="10" width="320" height="45"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="消息推送" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fsb-jP-N5j">
+                            <rect key="frame" x="12" y="14" width="60" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DXy-TJ-9hb">
+                            <rect key="frame" x="259" y="7" width="51" height="31"/>
+                            <color key="onTintColor" red="0.9882352941176471" green="0.2196078431372549" blue="0.039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="turnAction:" destination="-1" eventType="valueChanged" id="Lx4-dk-97I"/>
+                            </connections>
+                        </switch>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="DXy-TJ-9hb" secondAttribute="trailing" constant="12" id="AgM-or-Io3"/>
+                        <constraint firstItem="DXy-TJ-9hb" firstAttribute="centerY" secondItem="fsb-jP-N5j" secondAttribute="centerY" id="JM6-oO-HDo"/>
+                        <constraint firstItem="fsb-jP-N5j" firstAttribute="leading" secondItem="IgE-yc-4L3" secondAttribute="leading" constant="12" id="VsX-NS-veb"/>
+                        <constraint firstAttribute="height" constant="45" id="hs9-qR-ALA"/>
+                        <constraint firstItem="fsb-jP-N5j" firstAttribute="centerY" secondItem="IgE-yc-4L3" secondAttribute="centerY" id="oUS-cx-Ebb"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="及时推送有关U车库的信息和咨询" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYm-KN-eQk">
+                    <rect key="frame" x="38" y="65" width="192" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.51764705882352946" green="0.51764705882352946" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_custom_tip" translatesAutoresizingMaskIntoConstraints="NO" id="zP8-Xf-VGR">
+                    <rect key="frame" x="8" y="66" width="23" height="14"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="IgE-yc-4L3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="5rE-Lp-6T2"/>
+                <constraint firstAttribute="trailing" secondItem="IgE-yc-4L3" secondAttribute="trailing" id="A1R-sq-f6p"/>
+                <constraint firstItem="zP8-Xf-VGR" firstAttribute="centerY" secondItem="gYm-KN-eQk" secondAttribute="centerY" id="EK3-xO-tAD"/>
+                <constraint firstItem="gYm-KN-eQk" firstAttribute="top" secondItem="IgE-yc-4L3" secondAttribute="bottom" constant="10" id="Gat-uu-jZa"/>
+                <constraint firstItem="zP8-Xf-VGR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="N13-NC-KUh"/>
+                <constraint firstItem="gYm-KN-eQk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="38" id="ah9-R2-z0T"/>
+                <constraint firstItem="IgE-yc-4L3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="wb7-Ib-hn2"/>
+            </constraints>
+            <point key="canvasLocation" x="325" y="362"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_custom_tip" width="23" height="14"/>
+    </resources>
+</document>
