@@ -105,12 +105,22 @@
     [searchDic setValue:@"/api/ucarshow/getGoodsCount?goodsCategoryIdLevel2=" forKey:@"url"];
     [searchDic setValue:self.carBandID forKey:@"goodsCategoryIdLevel2"];
     [searchDic setValue:outColor forKey:@"outsideColor"];
+    if ([outColor isEqualToString:@"全部"]) {
+        [searchDic setValue:@"" forKey:@"outsideColor"];
+
+    }
     [searchDic setValue:carSourceSpotsId forKey:@"carSourceSpotsId"];
     [searchDic setValue:province forKey:@"province"];
     [searchDic setValue:inColor forKey:@"insideColor"];
+    if ([inColor isEqualToString:@"全部"]) {
+        [searchDic setValue:@"" forKey:@"insideColor"];
+
+    }
     [searchDic setValue:sortBy forKey:@"sortBy"];
     [searchDic setValue:carSourceCategoryIdLevel1 forKey:@"carSourceCategoryIdLevel1"];
     [searchDic setValue:carSourceCategoryIdLevel2 forKey:@"carSourceCategoryIdLevel2"];
+    
+    [searchDic setValue:sourceS forKey:@"goodsTemplateId"];
 //    pointStr = [[pointDic allValues]componentsJoinedByString:@","];
     
     if (self.pointArr.count == 1) {
