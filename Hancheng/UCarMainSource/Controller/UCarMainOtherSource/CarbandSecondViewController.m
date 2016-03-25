@@ -311,17 +311,34 @@ static NSString *cell2 = @"UCarTableViewSWCell";
     
 }
 
+
 - (void)getDataAgain
 {
     [_postDic setValue:@"1000" forKey:@"pageSize"];
    [CarBandThirdModel hanleAfterSelectBlock:^(id returnValue) {
        model = returnValue;
+//       NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"_price" ascending:NO];//其中，price为数组中的对象的属性，这个针对数组中存放对象比较更简洁方便
+//       NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:&sortDescriptor count:1];
+//       NSMutableArray *arr = [NSMutableArray arrayWithArray:model.datalist];
+//       
+//       [arr sortUsingDescriptors:sortDescriptors];
+       
+       NSArray *sortedArray = [model.datalist sortedArrayUsingSelector:@selector(comparePerson:)];
+       
+       model.datalist = sortedArray;
        [_myTableview reloadData];
    } WithFailureBlock:^(id error) {
        NSLog(@"错误");
    } Param:_postDic];
     
 }
+//-(NSComparisonResult)comparePerson:(CarBandThirdModel1 *)person{
+//    //默认按年龄排序
+//    NSComparisonResult result = [[NSNumber numberWithInt:person.age] compare:[NSNumber numberWithInt:self.age]];
+//    //如果年龄一样，就按照名字排序
+//    
+//    return result;
+//}
 
 - (void)viewWillDisappear:(BOOL)animated
 {
@@ -329,11 +346,17 @@ static NSString *cell2 = @"UCarTableViewSWCell";
     
     _myTableview.delegate = nil;
 
+
 }
 
 - (void)dealloc
 {
     [[NSNotificationCenter defaultCenter]removeObserver:self name:@"selectCondition" object:nil];
+    
+    
+    
+    
+    
 }
 
 - (void)viewWillLayoutSubviews
@@ -349,7 +372,7 @@ static NSString *cell2 = @"UCarTableViewSWCell";
 
                     make.left.mas_equalTo(self.view);
                     make.right.mas_equalTo(self.view);
-
+                    
 
                     make.height.equalTo(@(88*REM));
                 }];

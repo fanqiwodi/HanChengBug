@@ -33,7 +33,14 @@
 }
 
 
+- (void)setStr:(NSString *)str
+{
+    _str = str;
+    if (str.length == 0) {
+        self.ImageV.image = nil;
+    }
 
+}
 
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

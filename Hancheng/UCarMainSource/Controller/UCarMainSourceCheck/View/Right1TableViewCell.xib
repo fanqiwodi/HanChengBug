@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
@@ -17,24 +16,25 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NeI-tC-ehl">
-                        <rect key="frame" x="18" y="21" width="194" height="18"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <rect key="frame" x="18" y="22" width="229" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kJL-0r-iud">
-                        <rect key="frame" x="277" y="12" width="35" height="35"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kJL-0r-iud">
+                        <rect key="frame" x="257" y="12" width="35" height="35"/>
                         <constraints>
-                            <constraint firstAttribute="width" secondItem="kJL-0r-iud" secondAttribute="height" multiplier="1:1" id="Oeg-fE-nFY"/>
+                            <constraint firstAttribute="height" constant="35" id="cJ1-vA-Dw0"/>
+                            <constraint firstAttribute="width" constant="35" id="stZ-89-2Vx"/>
                         </constraints>
                     </imageView>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailingMargin" secondItem="NeI-tC-ehl" secondAttribute="trailing" constant="100" id="4JG-3m-ySk"/>
                     <constraint firstItem="NeI-tC-ehl" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="MW7-hp-J54"/>
-                    <constraint firstItem="kJL-0r-iud" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="5" id="eOQ-D3-qul"/>
-                    <constraint firstItem="NeI-tC-ehl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="mna-m5-O6b"/>
-                    <constraint firstItem="kJL-0r-iud" firstAttribute="centerY" secondItem="NeI-tC-ehl" secondAttribute="centerY" id="saz-Fn-flh"/>
+                    <constraint firstItem="kJL-0r-iud" firstAttribute="leading" secondItem="NeI-tC-ehl" secondAttribute="trailing" constant="10" id="abm-Wo-RfW"/>
+                    <constraint firstItem="NeI-tC-ehl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="k7q-L2-WuI"/>
+                    <constraint firstItem="kJL-0r-iud" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="4" id="qsJ-SL-H2A"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="NeI-tC-ehl" secondAttribute="trailing" constant="65" id="xRU-4L-XC7"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>

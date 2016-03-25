@@ -75,7 +75,14 @@
     LiftTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:self.str forIndexPath:indexPath];
     cell.tag = indexPath.row;
     [cell.topB setTitle:dataArr[indexPath.row] forState:UIControlStateNormal];
-    cell.bottomL.text = @"全部";
+    NSUserDefaults *uf = [NSUserDefaults standardUserDefaults];
+    if ([uf objectForKey:@"lift0"]) {
+        cell.bottomL.text = [uf objectForKey:[NSString stringWithFormat:@"lift%ld",indexPath.row]];
+        
+    }else{
+    
+        cell.bottomL.text = @"全部";
+    }
     [cell.topB setImage:[UIImage imageNamed:iconArr[indexPath.row]] forState:UIControlStateNormal];
     if (dataArr.count == 7) {
         if (indexPath.row == 5 ) {

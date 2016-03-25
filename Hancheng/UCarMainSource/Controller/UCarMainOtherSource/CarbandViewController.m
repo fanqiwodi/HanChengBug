@@ -37,6 +37,24 @@
     
             secondVC.goodsCategoryIdLevel2 = model1.myID;
             secondVC.title = model1.name;
+            
+            NSUserDefaults *uf = [NSUserDefaults standardUserDefaults];
+            for (int i = 0; i < 7; i++) {
+                
+                
+                
+                [uf setObject:[NSString stringWithFormat:@"%d",0] forKey:[NSString stringWithFormat:@"section%d",i]];
+                [uf setObject:[NSString stringWithFormat:@"%d",0] forKey:[NSString stringWithFormat:@"row%d",i]];
+                
+                
+                
+                
+            }
+            for (int i = 0; i < 6; i++) {
+                [uf setObject:@"全部" forKey:[NSString stringWithFormat:@"lift%d",i]];
+                
+            }
+            [uf synchronize];
             [self.navigationController pushViewController:secondVC animated:YES];
 
         }];

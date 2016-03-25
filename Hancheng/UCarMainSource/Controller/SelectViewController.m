@@ -89,6 +89,18 @@
         }
         
     }
+    
+    NSIndexPath *index = [NSIndexPath indexPathForRow:0 inSection:0];
+    [singleDic setObject:index forKey:@"0"];
+    [singleDic setObject:index forKey:@"1"];
+    [singleDic setObject:index forKey:@"2"];
+    [singleDic setObject:index forKey:@"3"];
+    [singleDic setObject:index forKey:@"4"];
+    [singleDic setObject:index forKey:@"5"];
+    [singleDic setObject:index forKey:@"6"];
+    [self.myTableView reloadData];
+    
+    
 }
 
 - (IBAction)submit:(id)sender {
@@ -98,6 +110,29 @@
         
         [[NSNotificationCenter defaultCenter] postNotificationName:@"selectCondition" object:bigDic];
     }];
+    
+    NSUserDefaults *uf = [NSUserDefaults standardUserDefaults];
+    for (int i = 0; i < 7; i++) {
+        
+
+        
+            NSIndexPath *index = singleDic[[NSString stringWithFormat:@"%d",i]];
+            [uf setObject:[NSString stringWithFormat:@"%lu",index.section] forKey:[NSString stringWithFormat:@"section%d",i]];
+            [uf setObject:[NSString stringWithFormat:@"%lu",index.row] forKey:[NSString stringWithFormat:@"row%d",i]];
+        
+        
+        
+
+    }
+    for (int i = 0; i < 6; i++) {
+        LiftTableViewCell *cell = self.LiftManger.liftCellArrl[i];
+        [uf setObject:cell.bottomL.text forKey:[NSString stringWithFormat:@"lift%d",i]];
+
+    }
+    [uf synchronize];
+
+    
+    
 }
 
 - (void)getCarModel1
@@ -407,7 +442,8 @@
             case 0:
             {
                 
-                
+                cell.str = @"";
+
                 if ([indexPath isEqual:[singleDic objectForKey:@"0"]]) {
                     cell.isClick = YES;
                 } else {
@@ -453,7 +489,8 @@
             {
                 
                
-                
+                cell.str = @"";
+
                     if ([indexPath isEqual:[singleDic objectForKey:@"1"]]) {
                         cell.isClick = YES;
                     } else {
@@ -472,6 +509,8 @@
                 break;
             case 2:
             {
+                cell.str = @"";
+
                 if ([indexPath isEqual:[singleDic objectForKey:@"2"]]) {
                     cell.isClick = YES;
                 } else {
@@ -490,6 +529,8 @@
                 break;
             case 3:
             {
+                cell.str = @"";
+
                 if ([indexPath isEqual:[singleDic objectForKey:@"3"]]) {
                     cell.isClick = YES;
                 } else {
@@ -513,6 +554,8 @@
                 break;
             case 4:
             {
+                cell.str = @"";
+
                 if ([indexPath isEqual:[singleDic objectForKey:@"4"]]) {
                     cell.isClick = YES;
                 } else {
@@ -563,6 +606,8 @@
                 break;
             case 6:
             {
+                cell.str = @"";
+
                 if ([indexPath isEqual:[singleDic objectForKey:@"6"]]) {
                     cell.isClick = YES;
                 } else {
@@ -1114,15 +1159,22 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
-    NSIndexPath *index = [NSIndexPath indexPathForRow:0 inSection:0];
+    NSUserDefaults *uf = [NSUserDefaults standardUserDefaults];
     singleDic = [NSMutableDictionary dictionary];
-    [singleDic setObject:index forKey:@"0"];
-    [singleDic setObject:index forKey:@"1"];
-    [singleDic setObject:index forKey:@"2"];
-    [singleDic setObject:index forKey:@"3"];
-    [singleDic setObject:index forKey:@"4"];
-    [singleDic setObject:index forKey:@"5"];
-    [singleDic setObject:index forKey:@"6"];
+    for (int i = 0; i < 7; i++) {
+        NSString *sectoin = [uf objectForKey:[NSString stringWithFormat:@"section%d", i]];
+        NSString *row = [uf objectForKey:[NSString stringWithFormat:@"row%d", i]];
+
+        NSIndexPath *index1 = [NSIndexPath indexPathForRow:[row integerValue] inSection:[sectoin integerValue]];
+        [singleDic setObject:index1 forKey:[NSString stringWithFormat:@"%d", i]];
+    }
+//    [singleDic setObject:index forKey:@"0"];
+//    [singleDic setObject:index forKey:@"1"];
+//    [singleDic setObject:index forKey:@"2"];
+//    [singleDic setObject:index forKey:@"3"];
+//    [singleDic setObject:index forKey:@"4"];
+//    [singleDic setObject:index forKey:@"5"];
+//    [singleDic setObject:index forKey:@"6"];
 
     [self getNetData];
     
